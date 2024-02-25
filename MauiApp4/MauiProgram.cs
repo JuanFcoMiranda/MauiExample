@@ -1,7 +1,8 @@
 ﻿using MauiApp4.Controls;
 using Microsoft.Extensions.Logging;
-
-#if IOS
+#if ANDROID
+using MauiApp4.Platforms.Android.Handlers;
+#elif IOS
 using MauiApp4.Platforms.iOS.Handlers;
 #endif
 
@@ -16,9 +17,10 @@ public static class MauiProgram
             .UseMauiApp<App>()
             .ConfigureMauiHandlers(handlers =>
             {
-#if IOS
+#if ANDROID
+                handlers.AddHandler<JustifiedLabel, MyJustifiedLabelHandler>();
+#elif IOS
                 handlers.AddHandler(typeof(JustifiedLabel), typeof(MyJustifiedLabelHandler));
-                // handlers.AddHandler(typeof(AppShell), typeof(CustomSlideTabRenderer));
 #endif
             })
             .ConfigureFonts(fonts =>

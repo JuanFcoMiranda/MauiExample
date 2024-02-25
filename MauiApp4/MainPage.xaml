@@ -5,7 +5,7 @@
              x:Class="MauiApp4.MainPage">
 
     <ScrollView>
-        <VerticalStackLayout>
+        <VerticalStackLayout Padding="10">
             <controls:JustifiedLabel Text="The UEFA Champions League (commonly known as the Champions League or historically as the European Cup) is an annual football association cup competition organized by UEFA since 1955 for the most important football clubs in Europe. It is widely considered the most prestigious football club competition in the world. The culmination of the competition is the most-watched annual sporting event worldwide, attracting over 100 million viewers.
 
 Before 1992, the tournament was officially called the European Cup for Clubs, but it is generally referred to simply as the European Cup or the Cup of Europe. The competition was initially a straight knockout tournament open only to the champion club of each country. During the 1990s, the tournament began to be expanded, incorporating a group stage and more teams. Strong national leagues in Europe now offer up to four teams each for the competition. The UEFA Champions League should not be confused with the UEFA Europa League, formerly known as the UEFA Cup.
