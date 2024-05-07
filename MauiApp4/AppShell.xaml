@@ -6,10 +6,15 @@
     xmlns:local="clr-namespace:MauiApp4"
     Shell.FlyoutBehavior="Disabled"
     Title="MauiApp4">
-
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    
+    <TabBar Title="MauiApp4">
+        <Tab Title="Domestic"
+             Icon="logo.png">
+            <ShellContent Title="Cats"
+                          ContentTemplate="{DataTemplate local:MainPage}" />
+            <ShellContent Title="Dogs"
+                          ContentTemplate="{DataTemplate local:MainPage2}" />
+        </Tab>
+    </TabBar>
 
 </Shell>
